@@ -7,7 +7,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        RRP3service.ConsoleRun(true);
+        RRP3service.ConsoleRun();
         while (true)
         {
             Console.ReadLine();

@@ -40,9 +40,9 @@ public static class RRP3service
                 case Menu.MainMenu:
                     Console.WriteLine("Coins: " + RRP3service._game.Player(RRP3service._game.PlayerTurn).Coins);
                     Console.WriteLine("1. Shot self");
-                    Console.WriteLine("2. Shot someone");
+                    Console.WriteLine("2. Shot someone (-2)");
                     Console.WriteLine("3. Use card");
-                    Console.WriteLine("4. Update card");
+                    Console.WriteLine("4. Update card (-1)");
 
                     break;
                 case Menu.VictimMenu:
