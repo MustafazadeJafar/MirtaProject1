@@ -103,11 +103,15 @@ public record PlayerDatas
     public int ID { get; set; }
 
 
+    public IEnumerable<DeckDatas>? DecksDatas { get; set; }
 }
 public record DeckDatas
 {
     public int ID { get; set; }
 
-    //[ForeignKey(PlayerDatas)]
+    [Required]
+    public string Name { get; set; }
+
     public int PlayerID { get; set; }
+    public PlayerDatas? PlayerDatas { get; set; }
 }
