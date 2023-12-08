@@ -85,7 +85,7 @@ internal class RRPplayer
     }
     public Card Deck(int index)
     {
-        if (!(index < this._deck.Length && index >= 0)) throw new RRP3IndexOutOfDeckException();
+        if (!(index < this._deck.Length && index >= 0)) throw new RRP3IndexOutOfBorderException();
         return this._deck[index];
     }
     public void Deck(int index, Card card)

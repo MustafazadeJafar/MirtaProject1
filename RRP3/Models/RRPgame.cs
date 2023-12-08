@@ -183,7 +183,11 @@ internal class RRPgame
         if (change) this._datas[(int)GameData.Baraban] |= (1 << index);
         else this._datas[(int)GameData.Baraban] &= ~(1 << index);
     }
-    public RRPplayer Player(int index) => this._players[index];
+    public RRPplayer Player(int index)
+    {
+
+        return this._players[index];
+    }
     public bool AddBullet(bool JustOne = false)
     {
         int isEmpty = 0;
@@ -269,10 +273,10 @@ internal class RRPgame
                         break;
                     case MainMenu.UpdateCard:
                         RRPplayer player = this.Player(this.PlayerTurn);
-                        if (player.Coins >= 2)
+                        if (player.Coins >= 1)
                         {
                             player.UpdateDeck();
-                            player.Coins -= 2;
+                            player.Coins -= 1;
                         }
 
                         this.PlayerInput = input;
@@ -291,6 +295,7 @@ internal class RRPgame
                 {
                     this.PlayerInput = input;
                     this.CurrentMenu = (int)Menu.MainMenu;
+                    GoNext = false;
                     break;
                 }
                 RRPaction prevAction = this.ActionsList(-1);
@@ -360,7 +365,7 @@ internal class RRPgame
                     }
 
                 }
-                catch (RRP3IndexOutOfDeckException)
+                catch (RRP3IndexOutOfBorderException)
                 {
                     this.PlayerInput = input;
                     this.CurrentMenu = (int)Menu.MainMenu;
