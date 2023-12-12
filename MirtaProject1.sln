@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RRP3", "RRP3\RRP3.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Server01", "Server01\Server01.csproj", "{F9ED08EA-2B62-4E63-815B-2D7096CE5D94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RRPcsdll", "RRPcsdll\RRPcsdll.csproj", "{3F941D59-60A0-4E96-8952-C57FAA5925A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RRPcsdll", "RRPcsdll\RRPcsdll.csproj", "{3F941D59-60A0-4E96-8952-C57FAA5925A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Front2", "Front2\Front2.csproj", "{C032D574-5DC3-454B-B7BF-6FAC91A83AEB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3F941D59-60A0-4E96-8952-C57FAA5925A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F941D59-60A0-4E96-8952-C57FAA5925A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F941D59-60A0-4E96-8952-C57FAA5925A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C032D574-5DC3-454B-B7BF-6FAC91A83AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C032D574-5DC3-454B-B7BF-6FAC91A83AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C032D574-5DC3-454B-B7BF-6FAC91A83AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C032D574-5DC3-454B-B7BF-6FAC91A83AEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
